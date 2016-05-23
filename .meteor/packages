@@ -7,8 +7,6 @@
 insecure
 react
 kadira:flow-router-ssr
-kadira:react-layout
-standard-minifiers
 meteor-base
 mobile-experience
 mongo
@@ -23,3 +21,5 @@ ejson
 spacebars
 check
 ecmascript
+standard-minifier-css
+standard-minifier-js

@@ -1,7 +1,9 @@
+import { mount } from 'react-mounter';
+
 FlowRouter.route("/", {
   name: "home",
   action() {
-    ReactLayout.render(BlogLayout, {
+    mount(BlogLayout, {
       content: <PostList />
     });
   }
@@ -10,7 +12,7 @@ FlowRouter.route("/", {
 FlowRouter.route('/post/:_id', {
   name: 'post',
   action(params) {
-    ReactLayout.render(BlogLayout, {
+    mount(BlogLayout, {
       content: <PostPage _id={params._id} />
     });
   }
